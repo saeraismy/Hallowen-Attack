@@ -1,0 +1,73 @@
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .bg{
+    position: relative;
+    background: url('img/background.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: animate 8s linear infinite;
+  }
+
+  .orang{
+    margin-left: 25px;
+    position: absolute;
+    bottom: 0;
+    transition: 3s;
+  }
+  
+  .hantu{
+    position: absolute;
+    bottom: 0;
+    animation: hantu 3.75s linear infinite;
+  }
+
+  .animate {
+    animation: jump 600ms infinite;
+  }  
+
+  .score{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  @keyframes animate {
+    from{
+      background-position: 0 0;
+    }to{
+      background-position: 100% 0;
+    }
+  }
+
+  @keyframes hantu{
+    from{
+      left: 1450px;
+    }to{
+      left: -20px;
+    }
+  }
+
+  @keyframes jump {
+    0% {
+      bottom: 0px;
+    }
+    20% {
+      bottom: 150px;
+    }
+    40% {
+      bottom: 200px;
+    }
+    60% {
+      bottom: 200px;
+    }
+    85% {
+      bottom: 150px;
+    }
+    100% {
+      bottom: 0px;
+    }
+  }
+  
